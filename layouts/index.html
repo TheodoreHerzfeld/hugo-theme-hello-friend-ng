@@ -18,6 +18,10 @@
                     {{ partial "social-icons.html" . }}
                 </div>
             {{- end }}
+
+            {{- range .Site.Params.body -}}
+                <p>{{.}}</p>
+            {{- end }}
         </div>
     </main>
 {{ end }}
